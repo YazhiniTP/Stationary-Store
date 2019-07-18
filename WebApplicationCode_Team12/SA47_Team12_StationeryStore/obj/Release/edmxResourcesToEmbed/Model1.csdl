@@ -1,0 +1,852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StationeryStoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="9" FixedLength="false" Unicode="true" />
+    <Property Name="DepartmentID" Type="Int32" />
+    <Property Name="isDelegated" Type="Int32" />
+    <Property Name="isUserRep" Type="Int32" />
+    <Property Name="Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Delegations" Relationship="StationeryStoreModel.FK_Delegation_Employee" FromRole="Employee" ToRole="Delegation" />
+    <NavigationProperty Name="Deliveries" Relationship="StationeryStoreModel.FK_Delivery_Employee" FromRole="Employee" ToRole="Delivery" />
+    <NavigationProperty Name="POes" Relationship="StationeryStoreModel.FK_PO_Employee" FromRole="Employee" ToRole="PO" />
+    <NavigationProperty Name="Requests" Relationship="StationeryStoreModel.FK_Request_Employee" FromRole="Employee" ToRole="Request" />
+    <NavigationProperty Name="RequestDetails" Relationship="StationeryStoreModel.FK_RequestDetail_Employee" FromRole="Employee" ToRole="RequestDetail" />
+    <NavigationProperty Name="UserRepCollections" Relationship="StationeryStoreModel.FK_UserRepCollection_Employee" FromRole="Employee" ToRole="UserRepCollection" />
+    <NavigationProperty Name="Vouchers" Relationship="StationeryStoreModel.FK_Voucher_Employee" FromRole="Employee" ToRole="Voucher" />
+    <NavigationProperty Name="VoucherDetails" Relationship="StationeryStoreModel.FK_VoucherDetail_Employee" FromRole="Employee" ToRole="VoucherDetail" />
+  </EntityType>
+  <EntityContainer Name="StationeryStoreEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <EntitySet Name="C__MigrationHistory" EntityType="StationeryStoreModel.C__MigrationHistory" />
+    <EntitySet Name="AspNetRoles" EntityType="StationeryStoreModel.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="StationeryStoreModel.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="StationeryStoreModel.AspNetUserLogin" />
+    <EntitySet Name="AspNetUsers" EntityType="StationeryStoreModel.AspNetUser" />
+    <EntitySet Name="CatalogueInventories" EntityType="StationeryStoreModel.CatalogueInventory" />
+    <EntitySet Name="Categories" EntityType="StationeryStoreModel.Category" />
+    <EntitySet Name="Collections" EntityType="StationeryStoreModel.Collection" />
+    <EntitySet Name="Delegations" EntityType="StationeryStoreModel.Delegation" />
+    <EntitySet Name="Deliveries" EntityType="StationeryStoreModel.Delivery" />
+    <EntitySet Name="Departments" EntityType="StationeryStoreModel.Department" />
+    <EntitySet Name="Disbursements" EntityType="StationeryStoreModel.Disbursement" />
+    <EntitySet Name="Outstandings" EntityType="StationeryStoreModel.Outstanding" />
+    <EntitySet Name="POes" EntityType="StationeryStoreModel.PO" />
+    <EntitySet Name="Requests" EntityType="StationeryStoreModel.Request" />
+    <EntitySet Name="RequestDetails" EntityType="StationeryStoreModel.RequestDetail" />
+    <EntitySet Name="SCCategories" EntityType="StationeryStoreModel.SCCategory" />
+    <EntitySet Name="Suppliers" EntityType="StationeryStoreModel.Supplier" />
+    <EntitySet Name="UserRepCollections" EntityType="StationeryStoreModel.UserRepCollection" />
+    <EntitySet Name="Vouchers" EntityType="StationeryStoreModel.Voucher" />
+    <EntitySet Name="VoucherDetails" EntityType="StationeryStoreModel.VoucherDetail" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="StationeryStoreModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaim" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="StationeryStoreModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogin" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CatalogueInventory_Category" Association="StationeryStoreModel.FK_CatalogueInventory_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="CatalogueInventory" EntitySet="CatalogueInventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CatalogueInventory_Supplier" Association="StationeryStoreModel.FK_CatalogueInventory_Supplier">
+      <End Role="Supplier" EntitySet="Suppliers" />
+      <End Role="CatalogueInventory" EntitySet="CatalogueInventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CatalogueInventory_Supplier1" Association="StationeryStoreModel.FK_CatalogueInventory_Supplier1">
+      <End Role="Supplier" EntitySet="Suppliers" />
+      <End Role="CatalogueInventory" EntitySet="CatalogueInventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CatalogueInventory_Supplier2" Association="StationeryStoreModel.FK_CatalogueInventory_Supplier2">
+      <End Role="Supplier" EntitySet="Suppliers" />
+      <End Role="CatalogueInventory" EntitySet="CatalogueInventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Disbursement_CatalogueInventory" Association="StationeryStoreModel.FK_Disbursement_CatalogueInventory">
+      <End Role="CatalogueInventory" EntitySet="CatalogueInventories" />
+      <End Role="Disbursement" EntitySet="Disbursements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Outstanding_CatalogueInventory" Association="StationeryStoreModel.FK_Outstanding_CatalogueInventory">
+      <End Role="CatalogueInventory" EntitySet="CatalogueInventories" />
+      <End Role="Outstanding" EntitySet="Outstandings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PO_CatalogueInventory" Association="StationeryStoreModel.FK_PO_CatalogueInventory">
+      <End Role="CatalogueInventory" EntitySet="CatalogueInventories" />
+      <End Role="PO" EntitySet="POes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RequestDetail_CatalogueInventory" Association="StationeryStoreModel.FK_RequestDetail_CatalogueInventory">
+      <End Role="CatalogueInventory" EntitySet="CatalogueInventories" />
+      <End Role="RequestDetail" EntitySet="RequestDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VoucherDetail_CatalogueInventory" Association="StationeryStoreModel.FK_VoucherDetail_CatalogueInventory">
+      <End Role="CatalogueInventory" EntitySet="CatalogueInventories" />
+      <End Role="VoucherDetail" EntitySet="VoucherDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRepCollection_Collection" Association="StationeryStoreModel.FK_UserRepCollection_Collection">
+      <End Role="Collection" EntitySet="Collections" />
+      <End Role="UserRepCollection" EntitySet="UserRepCollections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Delegation_Department" Association="StationeryStoreModel.FK_Delegation_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Delegation" EntitySet="Delegations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Delivery_Department" Association="StationeryStoreModel.FK_Delivery_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Delivery" EntitySet="Deliveries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Disbursement_Delivery" Association="StationeryStoreModel.FK_Disbursement_Delivery">
+      <End Role="Delivery" EntitySet="Deliveries" />
+      <End Role="Disbursement" EntitySet="Disbursements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Disbursement_Department" Association="StationeryStoreModel.FK_Disbursement_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Disbursement" EntitySet="Disbursements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Outstanding_Department" Association="StationeryStoreModel.FK_Outstanding_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Outstanding" EntitySet="Outstandings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRepCollection_Department" Association="StationeryStoreModel.FK_UserRepCollection_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="UserRepCollection" EntitySet="UserRepCollections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PO_Supplier" Association="StationeryStoreModel.FK_PO_Supplier">
+      <End Role="Supplier" EntitySet="Suppliers" />
+      <End Role="PO" EntitySet="POes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RequestDetail_Request" Association="StationeryStoreModel.FK_RequestDetail_Request">
+      <End Role="Request" EntitySet="Requests" />
+      <End Role="RequestDetail" EntitySet="RequestDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VoucherDetail_Voucher" Association="StationeryStoreModel.FK_VoucherDetail_Voucher">
+      <End Role="Voucher" EntitySet="Vouchers" />
+      <End Role="VoucherDetail" EntitySet="VoucherDetails" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="StationeryStoreModel.AspNetUserRoles">
+      <End Role="AspNetRole" EntitySet="AspNetRoles" />
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Delegation_Employee" Association="StationeryStoreModel.FK_Delegation_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Delegation" EntitySet="Delegations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Delivery_Employee" Association="StationeryStoreModel.FK_Delivery_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Delivery" EntitySet="Deliveries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PO_Employee" Association="StationeryStoreModel.FK_PO_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="PO" EntitySet="POes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Request_Employee" Association="StationeryStoreModel.FK_Request_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Request" EntitySet="Requests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RequestDetail_Employee" Association="StationeryStoreModel.FK_RequestDetail_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="RequestDetail" EntitySet="RequestDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRepCollection_Employee" Association="StationeryStoreModel.FK_UserRepCollection_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="UserRepCollection" EntitySet="UserRepCollections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Voucher_Employee" Association="StationeryStoreModel.FK_Voucher_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Voucher" EntitySet="Vouchers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VoucherDetail_Employee" Association="StationeryStoreModel.FK_VoucherDetail_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="VoucherDetail" EntitySet="VoucherDetails" />
+    </AssociationSet>
+    <EntitySet Name="StockCards" EntityType="StationeryStoreModel.StockCard" />
+    <EntitySet Name="sysdiagrams" EntityType="StationeryStoreModel.sysdiagram" />
+    <AssociationSet Name="FK_StoreCard_CatalogueInventory1" Association="StationeryStoreModel.FK_StoreCard_CatalogueInventory1">
+      <End Role="CatalogueInventory" EntitySet="CatalogueInventories" />
+      <End Role="StockCard" EntitySet="StockCards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StoreCard_SCCategory1" Association="StationeryStoreModel.FK_StoreCard_SCCategory1">
+      <End Role="SCCategory" EntitySet="SCCategories" />
+      <End Role="StockCard" EntitySet="StockCards" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="StationeryStoreModel.AspNetUserRoles" FromRole="AspNetRole" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="StationeryStoreModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaim" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="StationeryStoreModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogin" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="StationeryStoreModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserClaim" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="StationeryStoreModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserLogin" />
+    <NavigationProperty Name="AspNetRoles" Relationship="StationeryStoreModel.AspNetUserRoles" FromRole="AspNetUser" ToRole="AspNetRole" />
+  </EntityType>
+  <EntityType Name="CatalogueInventory">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="CatID" Type="Int32" />
+    <Property Name="Item_Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ReorderLevel" Type="Int32" />
+    <Property Name="ReorderQty" Type="Int32" />
+    <Property Name="UnitOfMeasure" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UnitCost" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ActualQty" Type="Int32" />
+    <Property Name="Priority1" Type="Int32" />
+    <Property Name="Priority2" Type="Int32" />
+    <Property Name="Priority3" Type="Int32" />
+    <NavigationProperty Name="Category" Relationship="StationeryStoreModel.FK_CatalogueInventory_Category" FromRole="CatalogueInventory" ToRole="Category" />
+    <NavigationProperty Name="Supplier" Relationship="StationeryStoreModel.FK_CatalogueInventory_Supplier" FromRole="CatalogueInventory" ToRole="Supplier" />
+    <NavigationProperty Name="Supplier1" Relationship="StationeryStoreModel.FK_CatalogueInventory_Supplier1" FromRole="CatalogueInventory" ToRole="Supplier" />
+    <NavigationProperty Name="Supplier2" Relationship="StationeryStoreModel.FK_CatalogueInventory_Supplier2" FromRole="CatalogueInventory" ToRole="Supplier" />
+    <NavigationProperty Name="Disbursements" Relationship="StationeryStoreModel.FK_Disbursement_CatalogueInventory" FromRole="CatalogueInventory" ToRole="Disbursement" />
+    <NavigationProperty Name="Outstandings" Relationship="StationeryStoreModel.FK_Outstanding_CatalogueInventory" FromRole="CatalogueInventory" ToRole="Outstanding" />
+    <NavigationProperty Name="POes" Relationship="StationeryStoreModel.FK_PO_CatalogueInventory" FromRole="CatalogueInventory" ToRole="PO" />
+    <NavigationProperty Name="RequestDetails" Relationship="StationeryStoreModel.FK_RequestDetail_CatalogueInventory" FromRole="CatalogueInventory" ToRole="RequestDetail" />
+    <NavigationProperty Name="VoucherDetails" Relationship="StationeryStoreModel.FK_VoucherDetail_CatalogueInventory" FromRole="CatalogueInventory" ToRole="VoucherDetail" />
+    <NavigationProperty Name="StockCards" Relationship="StationeryStoreModel.FK_StoreCard_CatalogueInventory1" FromRole="CatalogueInventory" ToRole="StockCard" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CatID" />
+    </Key>
+    <Property Name="CatID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category_Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CatalogueInventories" Relationship="StationeryStoreModel.FK_CatalogueInventory_Category" FromRole="Category" ToRole="CatalogueInventory" />
+  </EntityType>
+  <EntityType Name="Collection">
+    <Key>
+      <PropertyRef Name="CollectionID" />
+    </Key>
+    <Property Name="CollectionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserRepCollections" Relationship="StationeryStoreModel.FK_UserRepCollection_Collection" FromRole="Collection" ToRole="UserRepCollection" />
+  </EntityType>
+  <EntityType Name="Delegation">
+    <Key>
+      <PropertyRef Name="DelegationID" />
+    </Key>
+    <Property Name="DelegationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeID" Type="Int32" />
+    <Property Name="StartDate" Type="DateTime" Precision="0" />
+    <Property Name="EndDate" Type="DateTime" Precision="0" />
+    <Property Name="DepartmentID" Type="Int32" />
+    <NavigationProperty Name="Department" Relationship="StationeryStoreModel.FK_Delegation_Department" FromRole="Delegation" ToRole="Department" />
+    <NavigationProperty Name="Employee" Relationship="StationeryStoreModel.FK_Delegation_Employee" FromRole="Delegation" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Delivery">
+    <Key>
+      <PropertyRef Name="DeliveryID" />
+    </Key>
+    <Property Name="DeliveryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeID" Type="Int32" />
+    <Property Name="DepartmentID" Type="Int32" />
+    <Property Name="DeliveryDate" Type="DateTime" Precision="0" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Department" Relationship="StationeryStoreModel.FK_Delivery_Department" FromRole="Delivery" ToRole="Department" />
+    <NavigationProperty Name="Disbursements" Relationship="StationeryStoreModel.FK_Disbursement_Delivery" FromRole="Delivery" ToRole="Disbursement" />
+    <NavigationProperty Name="Employee" Relationship="StationeryStoreModel.FK_Delivery_Employee" FromRole="Delivery" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Delegations" Relationship="StationeryStoreModel.FK_Delegation_Department" FromRole="Department" ToRole="Delegation" />
+    <NavigationProperty Name="Deliveries" Relationship="StationeryStoreModel.FK_Delivery_Department" FromRole="Department" ToRole="Delivery" />
+    <NavigationProperty Name="Disbursements" Relationship="StationeryStoreModel.FK_Disbursement_Department" FromRole="Department" ToRole="Disbursement" />
+    <NavigationProperty Name="Outstandings" Relationship="StationeryStoreModel.FK_Outstanding_Department" FromRole="Department" ToRole="Outstanding" />
+    <NavigationProperty Name="UserRepCollections" Relationship="StationeryStoreModel.FK_UserRepCollection_Department" FromRole="Department" ToRole="UserRepCollection" />
+  </EntityType>
+  <EntityType Name="Disbursement">
+    <Key>
+      <PropertyRef Name="DisbursementID" />
+    </Key>
+    <Property Name="DisbursementID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentID" Type="Int32" />
+    <Property Name="ItemID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="DisbursedQty" Type="Int32" />
+    <Property Name="DeliveryID" Type="Int32" />
+    <NavigationProperty Name="CatalogueInventory" Relationship="StationeryStoreModel.FK_Disbursement_CatalogueInventory" FromRole="Disbursement" ToRole="CatalogueInventory" />
+    <NavigationProperty Name="Delivery" Relationship="StationeryStoreModel.FK_Disbursement_Delivery" FromRole="Disbursement" ToRole="Delivery" />
+    <NavigationProperty Name="Department" Relationship="StationeryStoreModel.FK_Disbursement_Department" FromRole="Disbursement" ToRole="Department" />
+  </EntityType>
+  <EntityType Name="Outstanding">
+    <Key>
+      <PropertyRef Name="OutstandingID" />
+    </Key>
+    <Property Name="OutstandingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentID" Type="Int32" />
+    <Property Name="ItemID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="Qty" Type="Int32" />
+    <NavigationProperty Name="CatalogueInventory" Relationship="StationeryStoreModel.FK_Outstanding_CatalogueInventory" FromRole="Outstanding" ToRole="CatalogueInventory" />
+    <NavigationProperty Name="Department" Relationship="StationeryStoreModel.FK_Outstanding_Department" FromRole="Outstanding" ToRole="Department" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PO">
+    <Key>
+      <PropertyRef Name="POID" />
+    </Key>
+    <Property Name="POID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="Qty" Type="Int32" />
+    <Property Name="SupplierID" Type="Int32" />
+    <Property Name="EmployeeID" Type="Int32" />
+    <Property Name="SubmissionDate" Type="DateTime" Precision="0" />
+    <Property Name="DeliveryDate" Type="DateTime" Precision="0" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CatalogueInventory" Relationship="StationeryStoreModel.FK_PO_CatalogueInventory" FromRole="PO" ToRole="CatalogueInventory" />
+    <NavigationProperty Name="Supplier" Relationship="StationeryStoreModel.FK_PO_Supplier" FromRole="PO" ToRole="Supplier" />
+    <NavigationProperty Name="Employee" Relationship="StationeryStoreModel.FK_PO_Employee" FromRole="PO" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Request">
+    <Key>
+      <PropertyRef Name="RequestID" />
+    </Key>
+    <Property Name="RequestID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeID" Type="Int32" />
+    <Property Name="SubmissionDate" Type="DateTime" Precision="0" />
+    <Property Name="ApprovalDate" Type="DateTime" Precision="0" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="RequestDetails" Relationship="StationeryStoreModel.FK_RequestDetail_Request" FromRole="Request" ToRole="RequestDetail" />
+    <NavigationProperty Name="Employee" Relationship="StationeryStoreModel.FK_Request_Employee" FromRole="Request" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="RequestDetail">
+    <Key>
+      <PropertyRef Name="RequestDetailID" />
+    </Key>
+    <Property Name="RequestDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="Qty" Type="Int32" />
+    <Property Name="RequestID" Type="Int32" />
+    <Property Name="EmployeeID" Type="Int32" />
+    <NavigationProperty Name="CatalogueInventory" Relationship="StationeryStoreModel.FK_RequestDetail_CatalogueInventory" FromRole="RequestDetail" ToRole="CatalogueInventory" />
+    <NavigationProperty Name="Request" Relationship="StationeryStoreModel.FK_RequestDetail_Request" FromRole="RequestDetail" ToRole="Request" />
+    <NavigationProperty Name="Employee" Relationship="StationeryStoreModel.FK_RequestDetail_Employee" FromRole="RequestDetail" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="SCCategory">
+    <Key>
+      <PropertyRef Name="SCCatID" />
+    </Key>
+    <Property Name="SCCatID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="StockCards" Relationship="StationeryStoreModel.FK_StoreCard_SCCategory1" FromRole="SCCategory" ToRole="StockCard" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="SupplierID" />
+    </Key>
+    <Property Name="SupplierID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="9" FixedLength="false" Unicode="true" />
+    <Property Name="P1name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="P2name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="P3name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CatalogueInventories" Relationship="StationeryStoreModel.FK_CatalogueInventory_Supplier" FromRole="Supplier" ToRole="CatalogueInventory" />
+    <NavigationProperty Name="CatalogueInventories1" Relationship="StationeryStoreModel.FK_CatalogueInventory_Supplier1" FromRole="Supplier" ToRole="CatalogueInventory" />
+    <NavigationProperty Name="CatalogueInventories2" Relationship="StationeryStoreModel.FK_CatalogueInventory_Supplier2" FromRole="Supplier" ToRole="CatalogueInventory" />
+    <NavigationProperty Name="POes" Relationship="StationeryStoreModel.FK_PO_Supplier" FromRole="Supplier" ToRole="PO" />
+  </EntityType>
+  <EntityType Name="UserRepCollection">
+    <Key>
+      <PropertyRef Name="URCollectionID" />
+    </Key>
+    <Property Name="URCollectionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentID" Type="Int32" />
+    <Property Name="EmployeeID" Type="Int32" />
+    <Property Name="CollectionID" Type="Int32" />
+    <NavigationProperty Name="Collection" Relationship="StationeryStoreModel.FK_UserRepCollection_Collection" FromRole="UserRepCollection" ToRole="Collection" />
+    <NavigationProperty Name="Department" Relationship="StationeryStoreModel.FK_UserRepCollection_Department" FromRole="UserRepCollection" ToRole="Department" />
+    <NavigationProperty Name="Employee" Relationship="StationeryStoreModel.FK_UserRepCollection_Employee" FromRole="UserRepCollection" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Voucher">
+    <Key>
+      <PropertyRef Name="VoucherID" />
+    </Key>
+    <Property Name="VoucherID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SubmissionDate" Type="DateTime" Precision="0" />
+    <Property Name="ApprovalDate" Type="DateTime" Precision="0" />
+    <Property Name="EmployeeID" Type="Int32" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="VoucherDetails" Relationship="StationeryStoreModel.FK_VoucherDetail_Voucher" FromRole="Voucher" ToRole="VoucherDetail" />
+    <NavigationProperty Name="Employee" Relationship="StationeryStoreModel.FK_Voucher_Employee" FromRole="Voucher" ToRole="Employee" />
+    <Property Name="Remarks" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VoucherDetail">
+    <Key>
+      <PropertyRef Name="AdjustmentID" />
+    </Key>
+    <Property Name="AdjustmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="AdjustedQty" Type="Int32" />
+    <Property Name="AdjustedAmt" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="VoucherID" Type="Int32" />
+    <Property Name="EmployeeID" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CatalogueInventory" Relationship="StationeryStoreModel.FK_VoucherDetail_CatalogueInventory" FromRole="VoucherDetail" ToRole="CatalogueInventory" />
+    <NavigationProperty Name="Voucher" Relationship="StationeryStoreModel.FK_VoucherDetail_Voucher" FromRole="VoucherDetail" ToRole="Voucher" />
+    <NavigationProperty Name="Employee" Relationship="StationeryStoreModel.FK_VoucherDetail_Employee" FromRole="VoucherDetail" ToRole="Employee" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Type="StationeryStoreModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="StationeryStoreModel.AspNetUserClaim" Role="AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaim">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Type="StationeryStoreModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="StationeryStoreModel.AspNetUserLogin" Role="AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogin">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CatalogueInventory_Category">
+    <End Type="StationeryStoreModel.Category" Role="Category" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.CatalogueInventory" Role="CatalogueInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CatID" />
+      </Principal>
+      <Dependent Role="CatalogueInventory">
+        <PropertyRef Name="CatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CatalogueInventory_Supplier">
+    <End Type="StationeryStoreModel.Supplier" Role="Supplier" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.CatalogueInventory" Role="CatalogueInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="SupplierID" />
+      </Principal>
+      <Dependent Role="CatalogueInventory">
+        <PropertyRef Name="Priority1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CatalogueInventory_Supplier1">
+    <End Type="StationeryStoreModel.Supplier" Role="Supplier" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.CatalogueInventory" Role="CatalogueInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="SupplierID" />
+      </Principal>
+      <Dependent Role="CatalogueInventory">
+        <PropertyRef Name="Priority2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CatalogueInventory_Supplier2">
+    <End Type="StationeryStoreModel.Supplier" Role="Supplier" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.CatalogueInventory" Role="CatalogueInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="SupplierID" />
+      </Principal>
+      <Dependent Role="CatalogueInventory">
+        <PropertyRef Name="Priority3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Disbursement_CatalogueInventory">
+    <End Type="StationeryStoreModel.CatalogueInventory" Role="CatalogueInventory" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.Disbursement" Role="Disbursement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CatalogueInventory">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="Disbursement">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Outstanding_CatalogueInventory">
+    <End Type="StationeryStoreModel.CatalogueInventory" Role="CatalogueInventory" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.Outstanding" Role="Outstanding" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CatalogueInventory">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="Outstanding">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PO_CatalogueInventory">
+    <End Type="StationeryStoreModel.CatalogueInventory" Role="CatalogueInventory" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.PO" Role="PO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CatalogueInventory">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="PO">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RequestDetail_CatalogueInventory">
+    <End Type="StationeryStoreModel.CatalogueInventory" Role="CatalogueInventory" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.RequestDetail" Role="RequestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CatalogueInventory">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="RequestDetail">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VoucherDetail_CatalogueInventory">
+    <End Type="StationeryStoreModel.CatalogueInventory" Role="CatalogueInventory" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.VoucherDetail" Role="VoucherDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CatalogueInventory">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="VoucherDetail">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRepCollection_Collection">
+    <End Type="StationeryStoreModel.Collection" Role="Collection" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.UserRepCollection" Role="UserRepCollection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Collection">
+        <PropertyRef Name="CollectionID" />
+      </Principal>
+      <Dependent Role="UserRepCollection">
+        <PropertyRef Name="CollectionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Delegation_Department">
+    <End Type="StationeryStoreModel.Department" Role="Department" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.Delegation" Role="Delegation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="Delegation">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Delivery_Department">
+    <End Type="StationeryStoreModel.Department" Role="Department" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.Delivery" Role="Delivery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="Delivery">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Disbursement_Delivery">
+    <End Type="StationeryStoreModel.Delivery" Role="Delivery" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.Disbursement" Role="Disbursement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Delivery">
+        <PropertyRef Name="DeliveryID" />
+      </Principal>
+      <Dependent Role="Disbursement">
+        <PropertyRef Name="DeliveryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Disbursement_Department">
+    <End Type="StationeryStoreModel.Department" Role="Department" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.Disbursement" Role="Disbursement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="Disbursement">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Outstanding_Department">
+    <End Type="StationeryStoreModel.Department" Role="Department" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.Outstanding" Role="Outstanding" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="Outstanding">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRepCollection_Department">
+    <End Type="StationeryStoreModel.Department" Role="Department" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.UserRepCollection" Role="UserRepCollection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="UserRepCollection">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PO_Supplier">
+    <End Type="StationeryStoreModel.Supplier" Role="Supplier" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.PO" Role="PO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="SupplierID" />
+      </Principal>
+      <Dependent Role="PO">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RequestDetail_Request">
+    <End Type="StationeryStoreModel.Request" Role="Request" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.RequestDetail" Role="RequestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Request">
+        <PropertyRef Name="RequestID" />
+      </Principal>
+      <Dependent Role="RequestDetail">
+        <PropertyRef Name="RequestID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VoucherDetail_Voucher">
+    <End Type="StationeryStoreModel.Voucher" Role="Voucher" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.VoucherDetail" Role="VoucherDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Voucher">
+        <PropertyRef Name="VoucherID" />
+      </Principal>
+      <Dependent Role="VoucherDetail">
+        <PropertyRef Name="VoucherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Type="StationeryStoreModel.AspNetRole" Role="AspNetRole" Multiplicity="*" />
+    <End Type="StationeryStoreModel.AspNetUser" Role="AspNetUser" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Delegation_Employee">
+    <End Type="StationeryStoreModel.Employee" Role="Employee" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.Delegation" Role="Delegation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Delegation">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Delivery_Employee">
+    <End Type="StationeryStoreModel.Employee" Role="Employee" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.Delivery" Role="Delivery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Delivery">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PO_Employee">
+    <End Type="StationeryStoreModel.Employee" Role="Employee" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.PO" Role="PO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="PO">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Request_Employee">
+    <End Type="StationeryStoreModel.Employee" Role="Employee" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.Request" Role="Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Request">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RequestDetail_Employee">
+    <End Type="StationeryStoreModel.Employee" Role="Employee" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.RequestDetail" Role="RequestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="RequestDetail">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRepCollection_Employee">
+    <End Type="StationeryStoreModel.Employee" Role="Employee" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.UserRepCollection" Role="UserRepCollection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="UserRepCollection">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Voucher_Employee">
+    <End Type="StationeryStoreModel.Employee" Role="Employee" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.Voucher" Role="Voucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Voucher">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VoucherDetail_Employee">
+    <End Type="StationeryStoreModel.Employee" Role="Employee" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.VoucherDetail" Role="VoucherDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="VoucherDetail">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="StockCard">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TransactionDate" Type="DateTime" Precision="0" />
+    <Property Name="ItemID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="SCCatID" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AdjustedQty" Type="Int32" />
+    <NavigationProperty Name="CatalogueInventory" Relationship="StationeryStoreModel.FK_StoreCard_CatalogueInventory1" FromRole="StockCard" ToRole="CatalogueInventory" />
+    <NavigationProperty Name="SCCategory" Relationship="StationeryStoreModel.FK_StoreCard_SCCategory1" FromRole="StockCard" ToRole="SCCategory" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_StoreCard_CatalogueInventory1">
+    <End Type="StationeryStoreModel.CatalogueInventory" Role="CatalogueInventory" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.StockCard" Role="StockCard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CatalogueInventory">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="StockCard">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StoreCard_SCCategory1">
+    <End Type="StationeryStoreModel.SCCategory" Role="SCCategory" Multiplicity="0..1" />
+    <End Type="StationeryStoreModel.StockCard" Role="StockCard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SCCategory">
+        <PropertyRef Name="SCCatID" />
+      </Principal>
+      <Dependent Role="StockCard">
+        <PropertyRef Name="SCCatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

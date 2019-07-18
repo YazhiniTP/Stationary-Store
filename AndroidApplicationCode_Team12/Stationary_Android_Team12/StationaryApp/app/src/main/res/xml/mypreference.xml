@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:title="Authentication">
+    <EditTextPreference android:title="Login id"
+        android:key="id"
+        android:summary="Enter Login id"/>
+    <EditTextPreference
+        android:inputType="textPassword"
+        android:key="password"
+        android:summary="Enter Password"
+        android:title="Password" />
+
+</PreferenceScreen>

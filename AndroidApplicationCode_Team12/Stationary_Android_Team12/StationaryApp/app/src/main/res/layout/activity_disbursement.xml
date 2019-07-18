@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/stoke_frame_gray_rounded"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/showmessage"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There has no pending request !!!"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/line_with_top_right" />
+
+
+        <include
+            android:id="@+id/item_header_list_layout"
+            layout="@layout/disbursementviewheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.8dp"
+            android:background="@drawable/line_with_dotted"
+            android:layerType="software" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/requestdetail_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="bottom">
+
+
+        <Button
+            android:id="@+id/btnselectlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="0.5"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/login_button_des"
+            android:text="Proceed to Deliver"
+            android:textAllCaps="false" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="79ac205347db46fe8736dc9dc6d49e32" Name="Diagram1">
+        <EntityTypeShape EntityType="StationeryStoreModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.AspNetRole" Width="1.5" PointX="10.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.AspNetUserClaim" Width="1.5" PointX="15.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.AspNetUserLogin" Width="1.5" PointX="15.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.AspNetUser" Width="1.5" PointX="13" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.CatalogueInventory" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Category" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Collection" Width="1.5" PointX="9" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Delegation" Width="1.5" PointX="11.25" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Delivery" Width="1.5" PointX="3" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Department" Width="1.5" PointX="0.75" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Disbursement" Width="1.5" PointX="5.25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Employee" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Outstanding" Width="1.5" PointX="8.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.PO" Width="1.5" PointX="5.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Request" Width="1.5" PointX="3" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.RequestDetail" Width="1.5" PointX="5.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.SCCategory" Width="1.5" PointX="6" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.StockCard" Width="1.5" PointX="8.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Supplier" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.sysdiagram" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.UserRepCollection" Width="1.5" PointX="11.25" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Voucher" Width="1.5" PointX="6" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.VoucherDetail" Width="1.5" PointX="8.25" PointY="14.25" IsExpanded="true" />
+        <AssociationConnector Association="StationeryStoreModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_CatalogueInventory_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_CatalogueInventory_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_CatalogueInventory_Supplier1" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_CatalogueInventory_Supplier2" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Disbursement_CatalogueInventory" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Outstanding_CatalogueInventory" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_PO_CatalogueInventory" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_RequestDetail_CatalogueInventory" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_StoreCard_CatalogueInventory" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_VoucherDetail_CatalogueInventory" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_UserRepCollection_Collection" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Delegation_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Delegation_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Delivery_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Delivery_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Disbursement_Delivery" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Disbursement_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Outstanding_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_UserRepCollection_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_PO_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Request_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_RequestDetail_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_UserRepCollection_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Voucher_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_VoucherDetail_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_PO_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_RequestDetail_Request" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_StoreCard_SCCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.FK_VoucherDetail_Voucher" ManuallyRouted="false" />
+        <AssociationConnector Association="StationeryStoreModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

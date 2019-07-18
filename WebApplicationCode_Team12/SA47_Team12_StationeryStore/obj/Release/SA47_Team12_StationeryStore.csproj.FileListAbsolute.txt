@@ -1,0 +1,340 @@
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Contact.aspx
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemOrdered.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemReqQtyBreakdownByDept.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\Clerk_ItemStockRpt.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemReqHistoryFull.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\Clerk_ItemReqQtyBreakdownFull.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemOrderedRpt(notinuse).rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Zoology.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Store.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Registrar.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Purchasing.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_English.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_CompSc.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Commerce.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Zoology.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Store.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Registrar.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Purchasing.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_English.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_CompSc.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Commerce.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemOrdered.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemReqQtyBreakdownByDept.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\Clerk_ItemStockRpt.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Contact.aspx.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Contact.aspx.designer.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemReqHistoryFull.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\Clerk_ItemReqQtyBreakdownFull.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemOrderedRpt(notinuse).cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Zoology.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Store.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Registrar.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Purchasing.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_English.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_CompSc.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Commerce.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Zoology.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Store.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Registrar.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Purchasing.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_English.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_CompSc.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Commerce.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\SA47_Team12_StationeryStore.dll.config
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\SA47_Team12_StationeryStore.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\SA47_Team12_StationeryStore.pdb
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\csc.exe
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\csc.exe.config
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\csc.rsp
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\csi.exe
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\csi.exe.config
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\csi.rsp
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.AppContext.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Console.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.IO.Compression.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.IO.Pipes.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Security.Claims.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.ValueTuple.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Xml.XPath.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\vbc.exe
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\vbc.exe.config
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\vbc.rsp
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\VBCSCompiler.exe
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Antlr3.Runtime.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportSource.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.Shared.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.Web.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\EntityFramework.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\EntityFramework.SqlServer.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Newtonsoft.Json.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Owin.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\System.Web.Optimization.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\System.Web.Providers.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\WebGrease.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\stdole.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\System.Web.Optimization.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Newtonsoft.Json.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Antlr3.Runtime.pdb
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\EntityFramework.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\EntityFramework.SqlServer.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\System.Web.Providers.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\obj\Release\SA47_Team12_StationeryStore.csprojAssemblyReference.cache
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\obj\Release\SA47_Team12_StationeryStore.csproj.CoreCompileInputs.cache
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\obj\Release\SA47_Team12_StationeryStore.csproj.CopyComplete
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\obj\Release\SA47_Team12_StationeryStore.dll
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\obj\Release\SA47_Team12_StationeryStore.pdb
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\Clerk_PredictedReorderQty.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\Clerk_PredictedReorderQty.cs
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqItemFull.rpt
+C:\Users\wynta\Desktop\Git\SA47_Team12_StationeryStore\bin\Reports\DH_ReqItemFull.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Contact.aspx
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemOrdered.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemReqQtyBreakdownByDept.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\Clerk_ItemStockRpt.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemReqHistoryFull.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\Clerk_ItemReqQtyBreakdownFull.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemOrderedRpt(notinuse).rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\Clerk_PredictedReorderQty.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Zoology.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Store.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Registrar.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Purchasing.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_English.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_CompSc.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Commerce.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Zoology.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Store.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Registrar.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Purchasing.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_English.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_CompSc.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Commerce.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqItemFull.rpt
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemOrdered.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemReqQtyBreakdownByDept.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\Clerk_ItemStockRpt.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Contact.aspx.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Contact.aspx.designer.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemReqHistoryFull.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\Clerk_ItemReqQtyBreakdownFull.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\ClerkSup_ItemOrderedRpt(notinuse).cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\Clerk_PredictedReorderQty.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Zoology.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Store.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Registrar.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Purchasing.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_English.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_CompSc.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByFreq_Commerce.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Zoology.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Store.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Registrar.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Purchasing.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_English.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_CompSc.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqByDeptSortByTotalAmt_Commerce.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Reports\DH_ReqItemFull.cs
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\SA47_Team12_StationeryStore.dll.config
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\SA47_Team12_StationeryStore.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\SA47_Team12_StationeryStore.pdb
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\csc.exe
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\csc.exe.config
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\csc.rsp
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\csi.exe
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\csi.exe.config
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\csi.rsp
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.AppContext.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Console.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.IO.Compression.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Security.Claims.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.ValueTuple.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\vbc.exe
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\vbc.exe.config
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\vbc.rsp
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\VBCSCompiler.exe
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Antlr3.Runtime.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.Shared.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.Web.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\EntityFramework.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\EntityFramework.SqlServer.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Newtonsoft.Json.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Owin.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\System.Web.Optimization.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\System.Web.Providers.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\WebGrease.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\stdole.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\System.Web.Optimization.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Newtonsoft.Json.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Antlr3.Runtime.pdb
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\EntityFramework.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\EntityFramework.SqlServer.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\System.Web.Providers.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\obj\Release\SA47_Team12_StationeryStore.csprojAssemblyReference.cache
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\obj\Release\SA47_Team12_StationeryStore.csproj.CoreCompileInputs.cache
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\obj\Release\SA47_Team12_StationeryStore.csproj.CopyComplete
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\obj\Release\SA47_Team12_StationeryStore.dll
+C:\Users\Yu You\Desktop\Code_v14\SA47_Team12_StationeryStore\obj\Release\SA47_Team12_StationeryStore.pdb

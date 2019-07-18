@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asus.stationaryapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/NoTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Activity.RequestActivity"
+            android:label="Manage Request" />
+        <activity
+            android:name=".Activity.RequestDetailActivity"
+            android:label="Request Details" />
+        <activity
+            android:name=".Activity.ManageCollectionActivity"
+            android:label="Manage Collections" />
+        <activity
+            android:name=".Activity.ManageDelegationActivity"
+            android:label="Manage Delegation" />
+        <activity android:name=".Activity.ManageInventoryActivity" />
+        <activity
+            android:name=".Activity.AdjustmentActivity"
+            android:label="Adjustment Voucher" />
+        <activity
+            android:name=".Activity.ManageInventory2Activity"
+            android:label="Raise Voucher" />
+        <activity
+            android:name=".Activity.AdjustmentDetailsActivity"
+            android:label="Adjustment Voucher Details" />
+        <activity
+            android:name=".Activity.ViewVoucherActivity"
+            android:label="Pending Voucher" />
+        <activity
+            android:name=".Activity.ViewVoucherDetailActivity"
+            android:label="Pending Voucher Details" />
+        <activity
+            android:name=".Activity.DisbursementActivity"
+            android:label="Disbursement" />
+        <activity
+            android:name=".Activity.DisbursementDetailActivity"
+            android:label="Disbursement Details" />
+        <activity
+            android:name=".Activity.DeliveryActivity"
+            android:label="Delivery" />
+        <activity
+            android:name=".Activity.DeliveryDetailActivity"
+            android:label="Delivery Details" />
+        <activity
+            android:name=".Activity.DeliveryDepartmentActivity"
+            android:label="Delivery Department List" />
+        <activity android:name=".Activity.SignActivity"></activity>
+    </application>
+
+</manifest>

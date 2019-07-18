@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="597970e26aff4bb0aaa1b8c7c0f965fa" Name="Diagram1" ZoomLevel="71">
+        <EntityTypeShape EntityType="StationeryStoreModel.Employee" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StationeryStoreModel.C__MigrationHistory" Width="1.5" PointX="3.375" PointY="2.375" />
+        <EntityTypeShape EntityType="StationeryStoreModel.AspNetRole" Width="1.5" PointX="13.375" PointY="4.125" />
+        <EntityTypeShape EntityType="StationeryStoreModel.AspNetUserClaim" Width="1.5" PointX="17.875" PointY="5.125" />
+        <EntityTypeShape EntityType="StationeryStoreModel.AspNetUserLogin" Width="1.5" PointX="17.875" PointY="2.625" />
+        <EntityTypeShape EntityType="StationeryStoreModel.AspNetUser" Width="1.5" PointX="15.625" PointY="3" />
+        <EntityTypeShape EntityType="StationeryStoreModel.CatalogueInventory" Width="1.5" PointX="5.625" PointY="10.375" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Category" Width="1.5" PointX="3.375" PointY="8.125" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Collection" Width="1.5" PointX="9.375" PointY="19.5" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Delegation" Width="1.5" PointX="8.625" PointY="0.75" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Delivery" Width="1.5" PointX="8.625" PointY="3.75" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Department" Width="1.5" PointX="6.375" PointY="3.75" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Disbursement" Width="1.5" PointX="10.875" PointY="7.25" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Outstanding" Width="1.5" PointX="10.875" PointY="15.875" />
+        <EntityTypeShape EntityType="StationeryStoreModel.PO" Width="1.5" PointX="10.875" PointY="11.5" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Request" Width="1.5" PointX="5.625" PointY="16.75" />
+        <EntityTypeShape EntityType="StationeryStoreModel.RequestDetail" Width="1.5" PointX="7.875" PointY="11.75" />
+        <EntityTypeShape EntityType="StationeryStoreModel.SCCategory" Width="1.5" PointX="5.625" PointY="7.125" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Supplier" Width="1.5" PointX="3.375" PointY="11.375" />
+        <EntityTypeShape EntityType="StationeryStoreModel.UserRepCollection" Width="1.5" PointX="11.625" PointY="0.875" />
+        <EntityTypeShape EntityType="StationeryStoreModel.Voucher" Width="1.5" PointX="3" PointY="19.625" />
+        <EntityTypeShape EntityType="StationeryStoreModel.VoucherDetail" Width="1.5" PointX="7.875" PointY="15.5" />
+        <AssociationConnector Association="StationeryStoreModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="StationeryStoreModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="StationeryStoreModel.FK_CatalogueInventory_Category" />
+        <AssociationConnector Association="StationeryStoreModel.FK_CatalogueInventory_Supplier" />
+        <AssociationConnector Association="StationeryStoreModel.FK_CatalogueInventory_Supplier1" />
+        <AssociationConnector Association="StationeryStoreModel.FK_CatalogueInventory_Supplier2" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Disbursement_CatalogueInventory" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Outstanding_CatalogueInventory" />
+        <AssociationConnector Association="StationeryStoreModel.FK_PO_CatalogueInventory" />
+        <AssociationConnector Association="StationeryStoreModel.FK_RequestDetail_CatalogueInventory" />
+        <AssociationConnector Association="StationeryStoreModel.FK_VoucherDetail_CatalogueInventory" />
+        <AssociationConnector Association="StationeryStoreModel.FK_UserRepCollection_Collection" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Delegation_Department" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Delivery_Department" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Disbursement_Delivery" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Disbursement_Department" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Outstanding_Department" />
+        <AssociationConnector Association="StationeryStoreModel.FK_UserRepCollection_Department" />
+        <AssociationConnector Association="StationeryStoreModel.FK_PO_Supplier" />
+        <AssociationConnector Association="StationeryStoreModel.FK_RequestDetail_Request" />
+        <AssociationConnector Association="StationeryStoreModel.FK_VoucherDetail_Voucher" ></AssociationConnector>
+        <AssociationConnector Association="StationeryStoreModel.AspNetUserRoles" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Delegation_Employee" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Delivery_Employee" />
+        <AssociationConnector Association="StationeryStoreModel.FK_PO_Employee" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Request_Employee" />
+        <AssociationConnector Association="StationeryStoreModel.FK_RequestDetail_Employee" />
+        <AssociationConnector Association="StationeryStoreModel.FK_UserRepCollection_Employee" />
+        <AssociationConnector Association="StationeryStoreModel.FK_Voucher_Employee" />
+        <AssociationConnector Association="StationeryStoreModel.FK_VoucherDetail_Employee" />
+        <EntityTypeShape EntityType="StationeryStoreModel.StockCard" Width="1.5" PointX="13.875" PointY="10.125" />
+        <EntityTypeShape EntityType="StationeryStoreModel.sysdiagram" Width="1.5" PointX="5.375" PointY="0.75" />
+        <AssociationConnector Association="StationeryStoreModel.FK_StoreCard_CatalogueInventory1" />
+        <AssociationConnector Association="StationeryStoreModel.FK_StoreCard_SCCategory1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

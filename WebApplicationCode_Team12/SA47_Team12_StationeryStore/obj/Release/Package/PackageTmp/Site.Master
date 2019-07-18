@@ -1,0 +1,264 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SA47_Team12_StationeryStore.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="mainMenu">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" runat="server" href="~/">Logic University Stationery Store</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a runat="server" href="~/">Home</a></li>
+                            <li><a runat="server" href="~/About">About</a></li>
+                            <li><a runat="server" href="~/Contact">Contact</a></li>
+                        </ul>
+                        <%if (HttpContext.Current.Session["EmpID"] == null)
+                            { %>
+                        <asp:LoginView runat="server" ViewStateMode="Disabled">
+                            <AnonymousTemplate>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a runat="server" href="~/Account/Register">Register</a></li>
+                                    <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                                </ul>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a runat="server" href="~/Account/Register">Register</a></li>
+                                    <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                                </ul>
+                            </LoggedInTemplate>
+
+                        </asp:LoginView>
+                        <%} %>
+                        <%else
+                            { %>
+                        <asp:LoginView runat="server" ViewStateMode="Disabled">
+                            <AnonymousTemplate>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a runat="server" href="~/Account/Register">Register</a></li>
+                                    <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                                </ul>
+                            </AnonymousTemplate>
+
+                            <LoggedInTemplate>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                    <li>
+                                        <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                    </li>
+                                </ul>
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                        <%} %>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%--<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>--%>
+        <br />
+        <%-- menus for user based on roles --%>
+        <div class="row">
+            <div class="col-sm-2" style="margin: 15px; padding: 10px; font-size: 15px">
+
+                <asp:TreeView ID="AdminTreeView" runat="server" Visible="False" LeafNodeStyle-NodeSpacing="5px"
+                    NodeStyle-CssClass="treeNode" RootNodeStyle-CssClass="rootNode"
+                    LeafNodeStyle-CssClass="leafNode" SelectedNodeStyle-CssClass="selectNode">
+                    <Nodes>
+                        <asp:TreeNode Text="Admin's Menu">
+                            <asp:TreeNode NavigateUrl="AssignRoles.aspx" Text="Assign Roles" Value="Assign Roles"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </Nodes>
+                </asp:TreeView>
+
+                <asp:TreeView ID="DHTreeView" runat="server" Visible="False" LeafNodeStyle-NodeSpacing="5px"
+                    NodeStyle-CssClass="treeNode" RootNodeStyle-CssClass="rootNode"
+                    LeafNodeStyle-CssClass="leafNode" SelectedNodeStyle-CssClass="selectNode">
+                    <Nodes>
+                        <asp:TreeNode Text="DH's Menu">
+                            <asp:TreeNode NavigateUrl="~/Views/ManageRequest.aspx" Text="Manage Request" Value="Manage Request"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/UpdateCollectionPoint.aspx" Text="Update Collection Point" Value="Update Collection Point"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/UpdateURep.aspx" Text="Update User Rep" Value="Update User Rep"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/CreateDelegation.aspx" Text="Create Delegation" Value="Create Delegation"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/CancelDelegation.aspx" Text="Cancel Delegation" Value="Cancel Delegation"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/DHReports.aspx" Text="DH Reports" Value="DH Reports"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </Nodes>
+                </asp:TreeView>
+
+                <asp:TreeView ID="DelStaffTreeView" runat="server" Visible="False" LeafNodeStyle-NodeSpacing="5px"
+                    NodeStyle-CssClass="treeNode" RootNodeStyle-CssClass="rootNode"
+                    LeafNodeStyle-CssClass="leafNode" SelectedNodeStyle-CssClass="selectNode">
+                    <Nodes>
+                        <asp:TreeNode Text="Delegated Staff's Menu">
+                            <asp:TreeNode NavigateUrl="~/Views/ManageRequest.aspx" Text="Manage Request" Value="Manage Request"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/UpdateCollectionPoint.aspx" Text="Update Collection Point" Value="Update Collection Point"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/UpdateURep.aspx" Text="Update User Rep" Value="Update User Rep"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/DHReports.aspx" Text="DH Reports" Value="DH Reports"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </Nodes>
+                </asp:TreeView>
+
+                <asp:TreeView ID="PurchasingDHTreeView" runat="server" Visible="False" LeafNodeStyle-NodeSpacing="5px"
+                    NodeStyle-CssClass="treeNode" RootNodeStyle-CssClass="rootNode"
+                    LeafNodeStyle-CssClass="leafNode" SelectedNodeStyle-CssClass="selectNode">
+                    <Nodes>
+                        <asp:TreeNode Text="Purchasing Department's Menu">
+                            <asp:TreeNode NavigateUrl="~/Views/AddNewItem.aspx" Text="Add New Item" Value="Add New Item"></asp:TreeNode>
+                             <asp:TreeNode NavigateUrl="~/Views/AddSupplier.aspx" Text="Add Supplier" Value="Add Supplier"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/ManageSupplier.aspx" Text="Manage Supplier" Value="Manage Supplier"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/UpdateItemSupplier.aspx" Text="Update Item Supplier" Value="Update Item Supplier"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </Nodes>
+                </asp:TreeView>
+
+                <asp:TreeView ID="DeptStaffTreeView" runat="server" Visible="False" LeafNodeStyle-NodeSpacing="5px"
+                    NodeStyle-CssClass="treeNode" RootNodeStyle-CssClass="rootNode"
+                    LeafNodeStyle-CssClass="leafNode" SelectedNodeStyle-CssClass="selectNode">
+                    <Nodes>
+                        <asp:TreeNode Text="Deptartment Staff's Menu">
+                            <asp:TreeNode NavigateUrl="~/Views/RaiseRequest.aspx" Text="Raise Request" Value="Raise Request"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/ManageOwnRequest.aspx" Text="Manage Own Request" Value="Manage Own Request"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </Nodes>
+                </asp:TreeView>
+
+                <asp:TreeView ID="URDeptStaffTreeView" runat="server" Visible="False" LeafNodeStyle-NodeSpacing="5px"
+                    NodeStyle-CssClass="treeNode" RootNodeStyle-CssClass="rootNode"
+                    LeafNodeStyle-CssClass="leafNode" SelectedNodeStyle-CssClass="selectNode">
+
+                    <Nodes>
+                        <asp:TreeNode Text="UR's Menu">
+                            <asp:TreeNode NavigateUrl="~/Views/RaiseRequest.aspx" Text="Raise Request" Value="Raise Request"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/ManageOwnRequest.aspx" Text="Manage Own Request" Value="Manage Own Request"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/UpdateCollectionPoint.aspx" Text="Update Collection Point" Value="Update Collection Point"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </Nodes>
+                </asp:TreeView>
+
+                <asp:TreeView ID="ManagerTreeView" runat="server" Visible="False" LeafNodeStyle-NodeSpacing="5px"
+                    NodeStyle-CssClass="treeNode" RootNodeStyle-CssClass="rootNode"
+                    LeafNodeStyle-CssClass="leafNode" SelectedNodeStyle-CssClass="selectNode">
+                    <Nodes>
+                        <asp:TreeNode Text="Manager's Menu">
+                            <asp:TreeNode NavigateUrl="~/Views/RaiseRequest.aspx" Text="Raise Request" Value="Raise Request"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/ManageOwnRequest.aspx" Text="Manage Own Request" Value="Manage Own Request"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/ManagerAdjVou.aspx" Text="Manage Adjustment Voucher" Value="Manage Adjustment Voucher"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </Nodes>
+                </asp:TreeView>
+
+                <asp:TreeView ID="SupervisorTreeView" runat="server" Visible="False" LeafNodeStyle-NodeSpacing="5px"
+                    NodeStyle-CssClass="treeNode" RootNodeStyle-CssClass="rootNode"
+                    LeafNodeStyle-CssClass="leafNode" SelectedNodeStyle-CssClass="selectNode">
+                    <Nodes>
+                        <asp:TreeNode Text="Supervisor's Menu">
+                            <asp:TreeNode NavigateUrl="~/Views/RaiseRequest.aspx" Text="Raise Request" Value="Raise Request"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/ManageOwnRequest.aspx" Text="Manage Own Request" Value="Manage Own Request"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/SupervisorAdjVou.aspx" Text="Manage Adjustment Voucher" Value="Manage Adjustment Voucher"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/SupervisorReports.aspx" Text="Supervisor Reports" Value="Supervisor Reports"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </Nodes>
+                </asp:TreeView>
+
+                <asp:TreeView ID="ClerkTreeView" runat="server" Visible="False" LeafNodeStyle-NodeSpacing="5px"
+                    NodeStyle-CssClass="treeNode" RootNodeStyle-CssClass="rootNode"
+                    LeafNodeStyle-CssClass="leafNode" SelectedNodeStyle-CssClass="selectNode">
+                    <Nodes>
+                        <asp:TreeNode Text="Clerk's Menu">
+                            <asp:TreeNode NavigateUrl="~/Views/ManageInventory.aspx" Text="Manage Inventory" Value="Manage Inventory"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/ManageCatalogue.aspx" Text="Manage Catalogue" Value="Manage Catalogue"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/PlaceOrder.aspx" Text="Place order" Value="Place order"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/PendingPO.aspx" Text="Pending PO" Value="Pending PO"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/Disbursement.aspx" Text="Disbursement" Value="Disbursement"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/DeliveryByDept.aspx" Text="Delivery By Dept" Value="Delivery By Dept"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/RequestVoucherDetails.aspx" Text="Request Voucher" Value="Request Voucher"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Views/ClerkReports.aspx" Text="Clerk Reports" Value="Clerk Reports"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </Nodes>
+                </asp:TreeView>
+            </div>
+
+            <div class="hidden">
+                <div class="container mt-3">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="ManageInventory.aspx">Manage Inventory</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ManageCatalogue.aspx">Manage Catalogue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PlaceOrder.aspx">Place order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ConfirmOrder.aspx">Confirm Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="RequestVoucher.aspx">Request Voucher</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ClerkReports.aspx">Clerk Reports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-sm-8">
+                <div class="container body-content">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <hr />
+                <footer>
+                    <p>&copy; <%: DateTime.Now.Year %> - Logic University Stationery Store</p>
+                </footer>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
