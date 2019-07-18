@@ -18,6 +18,8 @@ which include Department staff, Department Heads, Store Clerks, Store Managers a
 
 1. ASP .Net application developed in .Net C# using MS Visual Studio
 2. EF framework and MVC API have been used
-3. Crystal Reports for Reports
-4. HTML, Bootstarp, CSS for Front-end
-5. Android using Android Studio
+3. MS SQL Server as Persistence layer
+4. WhiteSarUML for Modeling tool
+5. Crystal Reports for Reports
+6. HTML, Bootstarp, CSS for Front-end
+7. Android using Android Studio
